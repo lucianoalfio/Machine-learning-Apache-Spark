@@ -1,0 +1,8 @@
+1) Test the spark environment by executing the spark’s HdfsTest.scala example.
+
+spark-submit --class org.apache.spark.examples.HdfsTest --master yarn --deploy-mode cluster --num-executors 1 --driver-memory 1024m --executor-memory 1024m --executor-cores 1 $SPARK_HOME/examples/jars/spark-examples*.jar /home/hadoop/userdata.txt
+
+2.Try to implement the same example in pyspark and perform spark-submit.
+
+
+3.Analyzethe behavior of spark application on Spark web UI4.Edit the application and add custom logs. Once executed check the Spark logs.5.Transfer the sample dataset from RDBMS to HDFS6.Validate the loaded data by comparing the statistics of data both in source and HDFS7.Create a new directory EQ in HDFS and transfer the data where series is EQ8.Set total trades which are less than 500 to 0 and transfer only updated rows.

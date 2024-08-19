@@ -1,0 +1,15 @@
+1) Test the spark environment by executing the spark’s HdfsTest.scala example.
+
+spark-submit --class org.apache.spark.examples.HdfsTest --master yarn --deploy-mode cluster --num-executors 1 --driver-memory 1024m --executor-memory 1024m --executor-cores 1 $SPARK_HOME/examples/jars/spark-examples*.jar /home/hadoop/userdata.txt
+
+OUTPUT
+Iteration 1 took 7957 ms
+Iteration 2 took 214 ms
+Iteration 3 took 156 ms
+Iteration 4 took 963 ms
+Iteration 5 took 143 ms
+Iteration 6 took 59 ms
+Iteration 7 took 67 ms
+Iteration 8 took 89 ms
+Iteration 9 took 60 ms
+Iteration 10 took 74 ms
